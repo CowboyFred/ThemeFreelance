@@ -1,0 +1,108 @@
+
+/* Footer
+----------------------------------------------- */
+
+#footer {
+	background-color: #101924;
+	padding-bottom: 30px;
+
+	@include breakpoint(medium) {
+		padding-top: 60px;
+	}
+
+	a {
+		transition: 300ms ease-out;
+
+		&:hover {
+			color: #FFF;
+		}
+	}
+
+	ul {
+		margin: 0;
+	}
+
+	.divider {
+		margin-top: 30px;
+		margin-bottom: 30px;
+		border-bottom: 1px solid #2E445C;
+	}
+}
+
+.footer-top {
+	ul {
+		list-style: none;
+	}
+
+	.widget-footer {
+		padding-right: 20px;
+		margin-bottom: 1.5em;
+
+		@include breakpoint(small only) {
+			margin-top: 2em;
+			padding-right: 0;
+		}
+	}
+
+	.widget-area:last-child .widget-footer {
+		padding-right: 0;
+	}
+
+	.widget-title-wrap {
+		margin-bottom: 1.2em;
+		padding-bottom: 0.5em;
+		margin-top: 2em;
+
+		@include breakpoint(medium) {
+			margin-top: 0;
+		}
+
+		&:after {
+			content: '\f1ee';
+			font-family: 'foundation-icons';
+			color: #2E445C;
+			position: absolute;
+			margin-top: -10px;
+			margin-left: -3px;
+		}
+
+		h3.widget-title {
+			color: #F8F8F8;
+			border-bottom: solid 1px #2E445C;
+			padding: 0 0 20px;
+			margin: 0;
+		}
+	}
+
+	.widget-125-ads ul.ads li a {
+		border: 0;
+		background-color: transparent;
+	}
+}
+
+.footer-bottom {
+	@include breakpoint(small only) {
+		text-align: center;
+	}
+}
+
+
+#theme-info,
+.footer-links {
+	line-height: 24px;
+	font-size: 14px;
+}
+
+.footer-links ul {
+	@include breakpoint(small only) {
+		display: inline-block;
+		margin-top: 0.5em;
+		float: none !important;
+	}
+}
+
+.footer-links ul li:first-child {
+	@include breakpoint(small only) {
+		margin-left: 0;
+	}
+}

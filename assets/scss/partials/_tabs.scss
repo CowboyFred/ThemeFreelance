@@ -1,0 +1,28 @@
+
+/* Tabs (Foundation Sections)
+----------------------------------------------- */
+
+.section-tabs {
+	.title {
+		background-color: #DFE4ED !important;
+		font-weight: bold;
+		border: 1px solid #EBEFF4 !important;
+
+		a {
+			color: #3C3851 !important;
+
+			&:hover {
+				text-decoration: none;
+				background-color: #D0D0D0;
+			}
+		}
+	}
+
+	.content {
+		border: none !important;
+	}
+
+	.active .title a {
+		color: #FFF !important;
+	}
+}

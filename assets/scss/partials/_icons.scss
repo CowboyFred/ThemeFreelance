@@ -1,0 +1,296 @@
+
+/* Icons
+----------------------------------------------- */
+
+i.icon:before {
+	font-family: 'foundation-icons';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	text-decoration: inherit;
+}
+
+i.icon.i-login:before {
+	content: '\f160';
+}
+
+i.icon.i-logout:before {
+	content: '\f19b';
+}
+
+i.icon.i-register:before {
+	content: '\f20a';
+}
+
+i.icon.i-dashboard:before {
+	content: '\f215';
+}
+
+i.icon.i-favorites:before,
+i.icon.i-favorite:before {
+	content: '\f159';
+}
+
+i.icon.i-user-location:before,
+i.icon.i-project-location:before {
+	content: '\f172';
+}
+
+i.icon.i-project-category:before {
+	content: '\f1a2';
+}
+
+i.icon.i-project:before,
+i.icon.i-active-projects:before {
+	content: '\f150';
+}
+
+i.icon.i-completed-projects:before {
+	content: '\f126';
+}
+
+i.icon.i-post-date:before,
+i.icon.i-order-date:before,
+i.icon.i-status-date:before,
+i.icon.i-proposal-date:before,
+i.icon.i-closed-date:before {
+	content: '\f124';
+}
+
+i.icon.i-remain-days:before,
+i.icon.i-days-deliver:before {
+	content: '\f12b';
+}
+
+i.icon.i-author:before {
+	content: '\f1fe';
+}
+
+i.icon.i-proposals-count:before {
+	content: '\f200';
+}
+
+i.icon.i-tags:before {
+	content: '\f19e';
+}
+
+i.icon.i-message:before,
+i.icon.i-notifications:before {
+	content: '\f16d';
+}
+
+i.icon.i-new-notification:before {
+	content: '\f121';
+}
+
+i.icon.i-agreement:before {
+	content: '\f129';
+}
+
+i.icon.i-proposal-details:before,
+i.icon.i-notes:before {
+	content: '\f128';
+}
+
+i.icon.i-budget:before {
+	content: '\f135';
+}
+
+i.icon.i-budget-alt:before {
+	content: '\f141';
+}
+
+i.icon.i-avg-proposals:before,
+i.icon.i-activity:before {
+	content: '\f153';
+}
+
+i.icon.i-avg-proposals-alt:before {
+	content: '\f155';
+}
+
+i.icon.i-view:before {
+	content: '\f147';
+}
+
+i.icon.i-payments:before {
+	content: '\f1b1';
+}
+
+i.icon.i-authored-project:before {
+	content: '\f1fc';
+}
+
+i.icon.i-status:before {
+	content: '\f14d';
+}
+
+i.icon.i-work-status:before {
+	content: '\f1fe';
+}
+
+i.icon.i-reviews:before {
+	content: '\f206';
+}
+
+i.icon.i-contact:before {
+	content: '\f173';
+}
+
+i.icon.i-workspace:before {
+	content: '\f161';
+}
+
+i.icon.i-comment:before {
+	content: '\f131';
+}
+
+i.icon.i-website:before {
+	content: '\f212';
+}
+
+i.icon.i-success-rate:before {
+	content: '\f156';
+}
+
+i.icon.i-featured:before {
+	content: '\f137';
+}
+
+i.icon.i-review-symbol:before {
+	content: '\f1ee';
+}
+
+i.icon.i-dispute:before {
+	content: '\f1af';
+}
+
+i.i-featured {
+	color: #FBC76D;
+}
+
+.projects-section i,
+.project-meta-below-desc i,
+.single-project-meta i,
+.order-main i,
+.proposal-meta i,
+.user-header-meta i,
+.user-projects-stats i,
+.single-project-meta-tags i,
+.work-user-meta > :not(.user-meta-info) i,
+.freelancer-loc i {
+	padding-right: 0.5em;
+	font-size: 1.3em;
+	vertical-align: text-bottom;
+}
+
+#sidebar .project-meta-below-desc i {
+	color: #8B88A2;
+}
+
+.project-meta-below-desc i,
+.single-project-meta i {
+	font-size: 1.5em;
+}
+
+.project-meta-below-desc.cf-sidebar i {
+	font-size: 1.2em;
+}
+
+.dashboard:not(.dashboard-agreement) .section-primary-info i {
+	color: #666572;
+}
+
+.dashboard .work-status i,
+.dashboard .order-status i,
+.dashboard .proposal-status i,
+.dashboard .proposal-meta i,
+.dashboard .project-participants-info i,
+.dashboard .total-proposals.clickable-prop-list a i,
+.projects-section .project-meta-info i,
+.proposal-meta i {
+	color: #FFF;
+}
+
+.dashboard > h2 i {
+	padding-right: 0.5em;
+	font-size: 1.3em;
+}
+
+.project-secondary .project-tags i {
+	color: #C9C9C9;
+}
+
+.dashboard .project-notifications i {
+	font-size: 1.5em;
+	color: #ABA8B8;
+	vertical-align: text-bottom;
+	padding-right: 0.3em;
+}
+
+.proposal-delivery-date i,
+.proposal-amount i,
+.proposal-date i {
+	padding-right: 0.2em;
+}
+
+.work-status i,
+.project-status i,
+.proposal-status i {
+	padding-left: 0;
+	padding-right: 0.2em;
+}
+
+.projects-section .total-proposals i {
+	padding-right: 0;
+}
+
+.projects-section .row .clickable-prop-list {
+	padding-bottom: 0;
+}
+
+.inline-addon i {
+	padding-right: 0.5em;
+}
+
+.dashboard-projects .project-authored i,
+.project-secondary .project-authored i {
+	font-size: 6.058em;
+	color: #696969;
+}
+
+.single-project-meta-tags.project-tags i {
+	font-size: 1.5em;
+	color: #CCC;
+}
+
+.project-author-by i,
+.project-num-proposals i,
+.project-date i {
+	font-size: 1.5em;
+	padding-right: 0.5em;
+}
+
+.project-date i {
+	font-size: 1.2em;
+}
+
+.user-skills i {
+	font-size: 1.7em;
+	padding-right: 0.5em;
+}
+
+.user-social-networks i {
+	color: #6D6D6D;;
+	font-size: 2em;
+	padding-right: 0.2em;
+}
+
+.user-profile .location i {
+	font-size: 1.5em;
+	padding-right: 0.3em;
+}

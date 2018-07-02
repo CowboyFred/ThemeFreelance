@@ -1,0 +1,406 @@
+
+/* Project Page
+----------------------------------------------- */
+
+
+.project-wrapper {
+	background-color: #FFF;
+}
+
+.project-header-wrapper {
+	position: relative;
+}
+
+.single-project-header {
+	padding: 20px 15px;
+}
+
+.single-project-header:after {
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	position: absolute;
+	bottom: -8px;
+	right: 50%;
+	content: '';
+}
+
+.single-project .budget-deadline {
+	text-align: center;
+	float: left;
+	color: #FFF;
+}
+
+.article-header-top {
+	margin-bottom: 2.5em;
+}
+
+.single-project .projects-starred a {
+	border-right: solid 1px #ECF0F6;
+	color: #7B8B92;
+	font-weight: normal;
+	margin-bottom: 0;
+}
+
+.single-project .projects-starred a:hover {
+	opacity: 0.7;
+}
+
+.single-project .projects-starred a:hover i {
+	color: #EF6460;
+}
+
+.single-project-meta-buttons {
+	@include breakpoint(medium) {
+		padding-right: 2em;
+		border-left: 1px solid #F7F7F7;
+	}
+}
+
+.single-project .article-header:first-of-type {
+	border-bottom: 1px solid #ECF0F6;
+}
+
+.project-content-wrapper {
+	color: #888;
+}
+
+.user-meta-info a,
+.agreement a,
+.bidder-display-name a {
+	color: #71A3B6;
+}
+
+.project-meta:before {
+	border-bottom: 8px solid #FFF;
+}
+
+.project > h2 {
+	background-color: #DFE4ED;
+}
+
+/*
+ Hack since nested foundation grid doesn't work
+ in version 4.x. Can remove after upgrade to 6.x
+ */
+.project-details {
+	padding-left: 0.9375em;
+	padding-right: 0.9375em;
+}
+
+.single-project fieldset {
+	border: 1px solid #F1F1F1;
+	border-right: 0;
+	border-left: 0;
+}
+
+.single-project fieldset legend {
+	color: #656565;
+}
+
+/* add-on badges */
+
+.single-project .add-ons {
+	margin-right: 16px;
+	text-align: center;
+}
+
+.add-ons span {
+	color: #FFF;
+	text-transform: uppercase;
+	margin: 0 0.5em 0 0;
+	font-size: 0.625em;
+	width: 58px;
+	height: 60px;
+	padding: 1em 0;
+	display: inline-block;
+	line-height: 1.5em;
+	position: absolute;
+	z-index: 1;
+}
+
+.add-ons [class^='featured'] {
+	background-color: #FBC76D;
+	background: url('#{$hrb-image-path}/featured-yellow-bg.png') no-repeat 0 0;
+	right: 80px;
+}
+
+.add-ons span:before {
+	font-family: 'foundation-icons';
+	white-space: pre;
+	font-size: 1.5em;
+}
+
+.add-ons [class^='featured']:before {
+	content: '\f137\A';
+}
+
+.add-ons [class^='featured']:nth-of-type(2) {
+	display: none;
+}
+
+.add-ons .urgent {
+	background-color: #FA6A60;
+	display: inline-block;
+	float: right;
+	background: url('#{$hrb-image-path}/featured-bg.png') no-repeat 0 0;
+	right: 10px;
+}
+
+.add-ons .urgent:before {
+	content: '\f101\A';
+}
+
+.single-bid .add-ons {
+	text-align: center;
+	font-size: 0.6em;
+	position: absolute;
+	top: 0;
+	left: 520px;
+}
+
+.single-bid .add-ons span {
+	color: #FFF;
+	font-size: inherit;
+}
+
+.single-bid .add-ons [class^='featured']:before {
+	content: '\f1fe\A';
+}
+
+.single-project .article-header {
+	border-bottom: 1px solid #F1F1F1;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+.single-project .article-title h3 {
+	text-transform: none;
+	font-weight: normal;
+	font-size: 1.5em;
+	margin: 0 0 1em;
+	text-align: center;
+
+	@include breakpoint(medium) {
+		margin: 5px 0 0 15px;
+		text-align: initial;
+	}
+}
+
+.single-project .budget-deadline > div {
+	float: left;
+	margin-right: 0.8125em;
+	min-width: 88px;
+}
+
+.single-project-meta {
+	background-color: #F9FAFC;
+	border-top: 1px solid #EBEFF4;
+	border-bottom: 1px solid #EBEFF4;
+	color: #8899A0;
+}
+
+.project-branches {
+	margin-top: 3em;
+}
+
+.project-branches .project-tags-header {
+	text-align: center;
+}
+
+.project-branches .project-tags h3 {
+	color: #3D3751;
+	font-size: 1.5em;
+}
+
+.single-project .project-trunk {
+	margin-top: 3em;
+}
+
+.payments-escrow-tab div.large-12.columns {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.single-project .proposals-list {
+	background-color: #FFF;
+	font-size: 14px;
+	color: #686871;
+}
+
+.single-project .no-results {
+	padding-left: 0.5em;
+	padding: 1em 0;
+}
+
+
+/* single project proposals list */
+
+.single-bid {
+	overflow: hidden;
+	position: relative;
+	border-bottom: 1px solid #E6E7EB;
+	background-color: #FFF;
+}
+
+.single-bid .columns {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.single-bid .columns:last-child {
+	margin-left: -15px;
+	margin-right: 15px;
+}
+
+.single-bid .bid-terms {
+	text-align: center;
+	position: relative;
+}
+
+.single-bid .bid-terms:before {
+	width: 0;
+	height: 0;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	position: absolute;
+	right: -7px;
+	top: 93px;
+	content: '';
+}
+
+.single-bid .bid,
+.single-bid .submit-time {
+	margin: 0 0 20px;
+	text-align: center;
+}
+
+.bid .proposal-amount,
+.bid .proposal-delivery {
+	display: block;
+}
+
+.bid .proposal-amount {
+	font-weight: bold;
+	padding: 12px 0;
+}
+
+.bid .proposal-delivery {
+	font-size: 10px;
+	padding: 6px 0;
+}
+
+.bid-terms .submit-time,
+.bid-terms .submit-time span {
+	display: block;
+}
+
+.bid-terms .submit-time span {
+	font-weight: bold;
+	padding: 12px 0;
+	font-size: 14px;
+}
+
+.bid-terms .submit-time .proposal-posted-time {
+	font-size: 10px;
+	padding: 6px 0;
+}
+
+.bid-terms strong,
+.bid-terms em {
+	display: block;
+	font-style: normal;
+}
+
+.bid-terms strong {
+	font-size: 1.25em;
+}
+
+.bid-terms p:last-child {
+	font-size: 0.75em;
+	line-height: 1.25em;
+}
+
+.bidder-info img {
+	margin-right: 20px;
+	width: 45px;
+	height: 45px;
+}
+
+.bidder-display-name {
+	font-weight: bold;
+	padding-right: 0.5em;
+}
+
+.bidder-info .bidder-location {
+	border-left: 1px solid #CCC;
+	padding-left: 0.5em;
+}
+
+.bidder-description {
+	padding-right: 1em;
+}
+
+.single-project .review-meta {
+	text-align: center;
+	border-left: 1px solid #E6E7EB;
+}
+
+.stars {
+	color: #5A5A5A;
+}
+
+.user-profile .review-meta .stars,
+.freelancer .review-meta .stars {
+	color: #FFF;
+}
+
+.freelancer .review-meta .no-rating,
+.user-profile .review-meta .no-rating {
+	font-size: 15px;
+	color: #FFF;
+}
+
+.single-bid .review-meta span {
+	display: block;
+	margin-top: 10px;
+	font-size: 0.85em;
+}
+
+.single-bid .review-meta span:last-child {
+	margin-bottom: 20px;
+}
+
+.single-project .bidder-message {
+	background-color: #F9FAFC;
+	border-bottom: solid 2px #E6E7EB;
+	padding: 1em 0;
+}
+
+.single-project .bidder-message .large-2 {
+	text-align: center;
+}
+
+.single-project .bidder-message i,
+.single-project .bidder-message strong {
+	display: block;
+	font-size: 2em;
+}
+
+.single-project .bidder-message i {
+	font-size: 2em;
+}
+
+.single-project .bidder-message strong {
+	font-size: 1.25em;
+}
+
+.single-project-meta-tags {
+	background-color: #FFF;
+	padding: 1.2em;
+}
+
+.single-project fieldset.project-custom-field {
+	border: 0;
+}

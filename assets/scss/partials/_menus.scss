@@ -1,0 +1,144 @@
+
+/* Menus
+----------------------------------------------- */
+
+/* Category menu below Header */
+
+.category-row {
+	font-size: 1em;
+}
+
+.category-row a {
+	color: #273022;
+	text-transform: uppercase;
+}
+
+.category-row ul {
+	color: #888;
+	background-color: #FFF;
+	margin: 0;
+}
+
+.category-row .subcat-list a {
+	color: #888;
+}
+
+.category-row ul li ul li {
+	list-style: none;
+	font-weight: normal;
+	line-height: 30px;
+}
+
+/* category area circle bullets with colors */
+
+.category-row ul li ul li:before {
+	content: '\25cb';
+	color: #80C446;
+	padding-right: 0.6em;
+	font-size: 1.35em;
+}
+
+.category-row .maincat-list > li:nth-child(2n+2) > ul li:before {
+	color: #F8E027;
+}
+
+.category-row .maincat-list > li:nth-child(3n+3) > ul li:before {
+	color: #F5A724;
+}
+
+.category-row .maincat-list > li:nth-child(4n+4) > ul li:before {
+	color: #EB7981;
+}
+
+.category-row .maincat-list > li:nth-child(5n+5) > ul li:before {
+	color: #4EB9FD;
+}
+
+.category-row .maincat-list > li:nth-child(6n+6) > ul li:before {
+	color: #E881AC;
+}
+
+.category-row .maincat-list > li:nth-child(7n+7) > ul li:before {
+	color: #48C494;
+}
+
+.category-row .maincat-list > li:nth-child(8n+8) > ul li:before {
+	color: #C575F3;
+}
+
+/* category area bottom borders with colors */
+
+.category-row .maincat-list > li > a {
+	display: block;
+	border-bottom: 6px solid #80C446;
+	margin-bottom: 0.75em;
+}
+
+.category-row .maincat-list > li:nth-child(2n+2) > a {
+	border-color: #F8E027;
+}
+
+.category-row .maincat-list > li:nth-child(3n+3) > a {
+	border-color: #F5A724;
+}
+
+.category-row .maincat-list > li:nth-child(4n+4) > a {
+	border-color: #EB7981;
+}
+
+.category-row .maincat-list > li:nth-child(5n+5) > a {
+	border-color: #4EB9FD;
+}
+
+.category-row .maincat-list > li:nth-child(6n+6) > a {
+	border-color: #E881AC;
+}
+
+.category-row .maincat-list > li:nth-child(7n+7) > a {
+	border-color: #48C494;
+}
+
+.category-row .maincat-list > li:nth-child(8n+8) > a {
+	border-color: #C575F3;
+}
+
+.maincat-list {
+	display: block;
+	padding: 0;
+	margin: 0 -0.625em;
+	*zoom: 1;
+}
+
+.maincat-list:before,
+.maincat-list:after {
+	content: ' ';
+	display: table;
+}
+
+.maincat-list:after {
+	clear: both;
+}
+
+.maincat-list > li {
+	display: inline;
+	height: auto;
+	float: left;
+	padding: 0 0.625em 1.25em;
+	width: 50%;
+}
+
+.maincat-list > li:nth-of-type(n) {
+	clear: none;
+}
+
+.maincat-list > li:nth-of-type(2n+1) {
+	clear: both;
+}
+
+.maincat-list ul .subcat-list {
+	padding-left: 1.2em;
+}
+
+.catcol > ul {
+	padding: 24px 0 16px 8px;
+}

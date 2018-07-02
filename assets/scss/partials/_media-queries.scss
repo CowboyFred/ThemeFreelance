@@ -1,0 +1,450 @@
+
+/* Responsive
+ *
+ * TODO: these should all be moved within nested
+ * blocks of scss using breakpoint mixins.
+----------------------------------------------- */
+
+/* micro bear */
+@media screen and (max-width: 36em) {
+	.project-meta .budget-deadline {
+		width: 19%;
+	}
+
+	.project-content {
+		width: 81%;
+	}
+
+	.single-project .bid {
+		margin-top: 0;
+	}
+
+	.project > h2 {
+		font-size: 1em;
+	}
+
+	.project-budget-wrapper,
+	.project-expires-wrapper {
+		padding: 10px 3px;
+	}
+
+	.project-budget .budget {
+		font-size: 0.75em;
+	}
+
+	.project-meta .budget-deadline .project-expired {
+		font-size: 0.9em;
+	}
+
+	.project-author-meta {
+		font-size: 0.8em;
+	}
+
+	#sidebar .ads img {
+		width: 75px;
+		height: 75px;
+	}
+
+	.dashboard .project-status,
+	.dashboard .order-status {
+		font-size: 0.7em;
+		min-width: 0;
+	}
+
+	.dashboard .listing h2,
+	.dashboard .listing h2 a,
+	.dashboard .order h2,
+	.dashboard .order h2 a {
+		font-size: 15px;
+		font-size: 0.95rem;
+	}
+
+	.dashboard-front table tr,
+	.dashboard-notifications table tr {
+		font-size: 0.65em;
+	}
+
+	.dashboard-proposals .section-primary-info {
+		font-size: 0.85em;
+	}
+
+	.dashboard .fl-pagination {
+		padding-top: 80px;
+	}
+
+	.dashboard .ad-space {
+		position: absolute;
+		margin-top: -5px;
+	}
+}
+
+/* baby bear */
+@media only screen and (max-width: 40em) , (min-width: 48em ) and (max-width: 60em) {
+	.freelancer .featured:after,
+	.freelancer-loc:before {
+		content: '\A';
+		white-space: pre;
+	}
+
+	.dashboard-projects .dashboard-filter-sort .button.secondary {
+		width: 100%;
+	}
+
+	.freelancer-loc {
+		display: block;
+		border: 0;
+		padding-left: 0;
+	}
+
+	.budget-deadline .budget {
+		font-size: 1em;
+		min-height: 0;
+	}
+
+	.project-expires .days-left {
+		font-size: 1.45em;
+		min-height: 0;
+	}
+
+	.dashboard-side .add-project a {
+		margin-left: 0;
+	}
+
+	/* font resizing */
+	.projects-section,
+	.order-main,
+	.dashboard .project-status .label,
+	.dashboard .proposal-status .label,
+	.dashboard .work-status .label,
+	.reviews .project-status .label,
+	.participant-details,
+	.single-project-title,
+	.project .project-content,
+	.project-meta-below-desc,
+	.single-bid .bid-terms span,
+	.comment-respond {
+		font-size: 0.8em;
+	}
+
+	.single-project .budget-deadline > div {
+		min-width: 65px;
+	}
+
+	.freelancer-meta.cf {
+		font-size: 0.7em;
+	}
+
+	.user-profile .review-meta,
+	.freelancer .review-meta {
+		margin: 0;
+		line-height: 0.5em;
+	}
+
+	.reviews .stars,
+	.freelancer .stars {
+		font-size: 0.45em;
+	}
+
+	.user-profile .stars {
+		font-size: 0.55em;
+	}
+
+	.freelancer .review-meta .no-rating,
+	.user-profile .review-meta .no-rating {
+		font-size: 0.55em;
+	}
+
+	.projects-section .total-proposals {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.dashboard-projects .section-primary-info .columns.total-proposals span {
+		padding: 0.1em;
+	}
+
+	.dashboard .project-status,
+	.dashboard .order-status {
+		width: auto;
+	}
+
+	.dashboard a.dropdown {
+		font-size: 0.7em;
+	}
+
+	.dashboard-projects .projects-actions ul {
+		text-align: left;
+	}
+
+	.dashboard .fl-pagination {
+		padding-top: 80px;
+	}
+
+	.dashboard .ad-space {
+		position: absolute;
+		margin-top: -5px;
+	}
+
+	.post-header .post-date-box {
+		font-size: 0.8em;
+		width: 20%;
+		right: 81%;
+	}
+
+	.post-header .post-title {
+		width: 80%;
+	}
+
+	.recent-box-content .total-proposals {
+		padding: 0 0.3em 0 0;
+	}
+
+	.recent-rating .stars-cont {
+		display: block;
+	}
+}
+
+/* juvinile bear */
+@media only screen and (max-width: 768px) {
+	.dashboard .project-meta-header {
+		margin-right: -0.9375em;
+		margin-left: -0.9375em;
+	}
+
+	.create-project span.prefix:not(.selected-currency) {
+		padding-left: 0.5em;
+		text-align: left;
+	}
+
+	.single-bid .bid,
+	.single-bid .submit-time {
+		margin: 0 auto 20px;
+	}
+
+	.widget-125-ads ul.ads li.alt {
+		float: left;
+	}
+
+	.dashboard-user-meta .edit-profile {
+		width: 100%;
+	}
+
+	.project-meta .budget-deadline .budget {
+		font-size: 0.9em;
+	}
+
+	.project-meta .budget-deadline .project-expired span {
+		font-size: 1.2em;
+	}
+
+	.project-meta .budget-deadline .budget-type {
+		font-size: 0.65em;
+	}
+
+	.credits-info .row {
+		border-bottom: 1px solid #FFF;
+	}
+
+	.agreement .section-primary-info .columns {
+		padding: 5px;
+	}
+
+	.agreement .section-primary-info .columns:last-of-type {
+		border-top: 1px solid #FFF;
+	}
+
+	.proposal-meta fieldset {
+		margin: 0;
+	}
+
+	.proposal-meta fieldset:first-of-type {
+		margin-top: 10px;
+	}
+
+	.proposal legend.project-title span a {
+		font-size: 1em;
+	}
+}
+
+/* micro bear */
+@media screen and (max-width: 36em) {
+	.project-meta .budget-deadline .budget {
+		font-size: 0.65em;
+	}
+
+	.project-meta .budget-deadline .project-expired span {
+		font-size: 0.9em;
+	}
+
+	.project-meta .budget-deadline .budget-type {
+		font-size: 0.55em;
+	}
+}
+
+/* bobby bear junior */
+
+@media only screen and (min-width: 36em) and (max-width: 768px) {
+	.project-dropdown,
+	.project-dropdown .button.dropdown {
+		width: 100%;
+	}
+
+	.single-project .budget-deadline > div {
+		min-width: 78px;
+	}
+
+	.sidebar-archive .children li {
+		width: 33%;
+		float: left;
+	}
+}
+
+/* mama bear */
+@media only screen and (min-width: 36em ) and (max-width: 60em) {
+	.single-project .budget-deadline > div {
+		min-width: 78px;
+	}
+}
+
+
+/* uncle minor bear */
+
+@media only screen and (min-width: 768px ) and (max-width: 60em) {
+	.sidebar-archive .children li {
+		width: 100%;
+		float: none;
+	}
+
+	.project-meta .budget-deadline .budget {
+		font-size: 0.85em;
+	}
+
+	.project-meta .budget-deadline .project-expired span {
+		font-size: 1.1em;
+	}
+
+	.project-meta .budget-deadline .budget-type {
+		font-size: 0.55em;
+	}
+
+	.single-bid .bid-terms span {
+		font-size: 0.7em;
+	}
+
+	.dashboard .listing h2,
+	.dashboard .listing h2 a,
+	.dashboard .order h2,
+	.dashboard .order h2 a {
+		font-size: 15px;
+		font-size: 0.95rem;
+	}
+}
+
+/* papa bear */
+@media only screen and (min-width: 768px) {
+	.dashboard-filter-sort .button.secondary {
+		width: 100%;
+	}
+
+	.maincat-list > li:nth-of-type(2n+1) {
+		clear: none;
+	}
+
+	.maincat-list > li {
+		width: 25%;
+		padding: 1.75em 0.875em;
+	}
+
+	.maincat-list > li:nth-of-type(n) {
+		clear: none;
+	}
+
+	.maincat-list > li:nth-of-type(4n+1) {
+		clear: both;
+	}
+
+	.category-row h1 {
+		padding-left: 14px;
+	}
+
+	.widget-125-ads li {
+		width: 50%;
+	}
+
+	/* single project */
+
+	.single-bid .columns {
+		margin-bottom: -999px;
+		padding-bottom: 999px;
+	}
+
+	.project .share-this {
+		padding: 1em;
+	}
+
+
+	/* forms */
+
+	.log-in .twitter-sign-in {
+		padding-left: 0;
+	}
+
+	/* dashboard proposals */
+
+	.dashboard-proposals .user-display-name,
+	.dashboard-projects .user-display-name {
+		padding-top: 1em;
+	}
+
+	.dashboard-projects .listing,
+	.dashboard-proposals .listing {
+		font-size: 0.875em;
+		padding-right: 1em;
+		padding-bottom: 3em;
+		border-bottom: 1px solid #F1F1F1;
+		margin-top: 1.5em;
+	}
+
+	.dashboard-projects .listing:not(:first-of-type),
+	.dashboard-proposals .listing:not(:first-of-type) {
+		padding-top: 1em;
+	}
+
+	.dashboard-proposals .projects-section .row:last-of-type {
+		border-bottom: 0;
+	}
+
+	.dashboard-proposals .project-price-action {
+		padding-left: 0;
+	}
+
+	.dashboard-proposals .proposals-actions ul,
+	.dashboard-projects .projects-actions ul {
+		text-align: left;
+		font-size: 1.2em;
+	}
+
+	.dashboard-proposals .user-display-name,
+	.dashboard-projects .user-display-name {
+		font-size: 0.8em;
+	}
+
+	/* dashboard projects */
+
+	.dashboard-projects .project-author-rating {
+		padding-top: 16px;
+		text-align: center;
+		padding-right: 0;
+	}
+
+	.single-project .project-price-action {
+		padding-left: 0;
+	}
+}
+
+/* visibility for top bar menu social items */
+@media only screen and (min-width: 58.75em) {
+	.top-bar-section .left span {
+		display: none;
+	}
+}

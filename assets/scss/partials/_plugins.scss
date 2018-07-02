@@ -1,0 +1,111 @@
+
+/* 3rd Party Plugin Styles
+----------------------------------------------- */
+
+
+/*
+ * select2.js dropdown foundation custom styles
+ * https://github.com/zurb/foundation/issues/454
+ */
+
+.select2-container {
+	width: 100%;
+	font-size: 0.875em;
+	margin-bottom: 1em !important;
+}
+
+.select2-container-multi ul.select2-choices {
+	background-image: none;
+	background-color: #F6F7FB;
+	border: 1px solid #E0E4EE;
+}
+
+.select2-container input[type='search'] {
+	height: initial;
+	margin: auto;
+	line-height: 1em;
+}
+
+.select2-container .select2-selection {
+	border: 1px solid #E0E4EE !important;
+	border-radius: 0 !important;
+}
+
+.select2-container .select2-choice {
+	border-radius: 0;
+	background: linear-gradient(to bottom, white 0%, #F3F3F3 100%);
+	border: solid 1px #CCC;
+	height: 2.3125em;
+	line-height: 2.25em;
+	box-shadow: none;
+}
+
+.select2-container .select2-choice:hover div b {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border: inset 5px;
+	border-color: #222 transparent transparent transparent;
+	border-top-style: solid;
+}
+
+.select2-container .select2-choice div b {
+	background: none;
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border: inset 5px;
+	border-color: #AAA transparent transparent transparent;
+	border-top-style: solid;
+	position: absolute;
+	left: 0.9375em;
+	top: 50%;
+	margin-top: -3px;
+}
+
+.select2-container .select2-choice div {
+	background: none;
+	border-left: none;
+	position: absolute;
+	width: 2.5em;
+	height: 2.3125em;
+	display: block;
+	right: 0;
+	top: 0;
+}
+
+.select2-container-multi .select2-choices li.select2-search-choice {
+	margin-top: 6px;
+	padding-top: 5px;
+	color: #435159;
+}
+
+a.select2-search-choice-close {
+	top: 5px;
+}
+
+.select2-drop {
+	border-radius: 0;
+}
+
+.select2-results .select2-result-label {
+	font-size: 0.875em;
+}
+
+.select2-search input {
+	background: none;
+}
+
+
+/* ShareThis Plugin */
+
+/* fix ShareThis images being cut off when height is set to 16px */
+.stButton span.stMainServices {
+	height: auto;
+}
+
+.single-project .row.share-this {
+	border-bottom: 1px solid #ECF0F6;
+}

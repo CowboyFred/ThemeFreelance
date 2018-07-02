@@ -1,0 +1,106 @@
+
+/* Forms
+----------------------------------------------- */
+
+span.prefix,
+label.prefix {
+	background: #FFF;
+	border-color: #E0E4EE;
+	border-right: none;
+	color: #676772;
+}
+
+span.postfix,
+label.postfix {
+	background: #FFF;
+	border-color: #E0E4EE;
+	border-left: none;
+	color: #676772;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='date'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='month'],
+input[type='week'],
+input[type='email'],
+input[type='number'],
+input[type='search'],
+input[type='tel'],
+input[type='time'],
+input[type='url'],
+textarea {
+	background-color: #F6F7FB;
+	border: 1px solid #E0E4EE;
+	box-shadow: none;
+}
+
+.proposal label[for='comment'] {
+	font-weight: bold;
+	font-size: 1em;
+	line-height: 1.8em;
+}
+
+.proposal-description {
+	min-height: 138px;
+}
+
+.featured-option {
+	color: #686670;
+	font-size: 0.75em;
+}
+
+.row.credits-info {
+	padding: 1.125em;
+}
+
+.credits-info,
+.credits-info a {
+	color: #DDDCE2;
+}
+
+.credits-info .prefix {
+	background-color: #57565C;
+	border: 0;
+	color: #DDDCE2;
+}
+
+.credits-info .credits-balance,
+.credits-info .credits-required {
+	background-color: #44434B;
+}
+
+fieldset.submit {
+	margin-top: 0;
+}
+
+fieldset.submit a {
+	font-size: 0.75em;
+	color: #686670;
+}
+
+.proposal .submit .button {
+	border: 0;
+	color: #FFF;
+	padding-right: 3em;
+	padding-left: 3em;
+}
+
+.proposal .agree {
+	float: left;
+	margin-right: 20px;
+}
+
+.proposal .agree:hover {
+	background-color: #95CC65;
+}
+
+.proposal .cancel {
+	background-color: #A6A6A6;
+}
+
+.proposal .cancel:hover {
+	background-color: #B7B7B7;
+}

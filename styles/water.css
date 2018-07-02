@@ -1,0 +1,465 @@
+/*  =========== [ Bee Water (Red/Blue) Stylesheet Colors: Table of Contents ] =========== */
+
+/*
+ * 1. Layout, General
+ * 2. Header
+ * 3. Listings
+ * 4. Single
+ * 5. Forms
+ * 6. Sidebar
+ * 7. Dashboard
+ * 8. Footer
+ */
+
+/* =========== [ 1. LAYOUT, GENERAL ] =========== */
+
+a,
+a:hover,
+a:focus {
+	color: #CC8AF6;
+}
+
+.button,
+.button[disabled],
+a.post-edit-link,
+a.more-link {
+	background-color: #C582EF;
+}
+
+.button[disabled] {
+	opacity: 0.6;
+}
+
+.widget_create_project_button .button {
+	background-color: #B97BDF;
+}
+
+.button:hover,
+.button:focus,
+a.post-edit-link:hover,
+a.post-edit-link:focus,
+a.more-link:hover,
+a.more-link:focus {
+	background-color: #A76ACC;
+}
+
+.button.secondary {
+	background-color: #E0E4EE;
+}
+
+.button.secondary:not(.dropdown) :hover {
+	background-color: #A76ACC;
+	color: #FFF;
+}
+
+.top-bar-section a:hover {
+	opacity: 0.7;
+	text-decoration: none;
+}
+
+#navigation li :not(.button):hover {
+	text-decoration: none;
+	background-color: #D26262;
+	opacity: 1;
+}
+
+.project > h2 a {
+	color: #415157;
+}
+
+.featured.project .project-meta a {
+	color: #77DAFF;
+}
+
+.projects-section i,
+.project-meta-below-desc i,
+.order-main i,
+.user-header-meta i,
+.user-projects-stats i,
+.single-project-meta-tags i,
+.work-user-meta > :not(.user-meta-info) i,
+.freelancer-loc i {
+	color: #ABA8B8;
+}
+
+.full-width .content-header {
+	background-color: #0082BE;
+}
+
+/* =========== [ 2. HEADER ] =========== */
+
+.top-bar {
+	background-color: #FFF;
+}
+
+/* main nav menu */
+
+.main-navigation,
+.lower-top-bar,
+.main-navigation .top-bar.expanded .title-area {
+	background-color: #E16868;
+}
+
+.lower-top-bar li a:not(.button) {
+	background: #E16868;
+}
+
+.lower-top-bar li a {
+	border-right: 1px solid #D14C4C;
+}
+
+/* below navigation widget */
+
+.top-widgets {
+	color: #FFF;
+	background-color: #00A2DB;
+}
+
+/* search */
+
+.search-button {
+	background-color: #00A2DB;
+}
+
+.search-button:hover,
+.search-button:focus {
+	background-color: #0082BE;
+}
+
+/* responsive menus */
+
+.top-navigation .top-bar .toggle-topbar a span {
+	-webkit-box-shadow: 0 10px 0 1px #00A2DB, 0 16px 0 1px #00A2DB, 0 22px 0 1px #00A2DB;
+	        box-shadow: 0 10px 0 1px #00A2DB, 0 16px 0 1px #00A2DB, 0 22px 0 1px #00A2DB;
+}
+
+.main-navigation .top-bar.expanded .toggle-topbar a span {
+	-webkit-box-shadow: 0 10px 0 1px #D14C4C, 0 16px 0 1px #D14C4C, 0 22px 0 1px #D14C4C;
+	        box-shadow: 0 10px 0 1px #D14C4C, 0 16px 0 1px #D14C4C, 0 22px 0 1px #D14C4C;
+}
+
+.lower-top-bar.expanded .top-bar-section ul li {
+	border-top: 1px solid #D14C4C;
+}
+
+/* =========== [ 3. LISTINGS ] =========== */
+
+/* project featured loop */
+
+.featured.project > h2:hover {
+	background-color: #0177AD;
+}
+
+.featured > h2 {
+	background-color: #00A2DB;
+}
+
+.featured .project-meta:before {
+	border-bottom: 8px solid #0082BE;
+}
+
+.featured .project-meta,
+.featured .project-description,
+.featured .project-author-meta {
+	background-color: #0082BE;
+	color: #C6DFD8;
+}
+
+.featured .project-cat a,
+.featured .project-meta-below-desc {
+	background-color: #0082BE;
+	color: #00AFED;
+}
+
+.featured .project-meta-below-desc i,
+.featured .project-meta-below-desc a {
+	color: #00AFED;
+}
+
+.featured .project-author-meta,
+.featured .project-budget-wrapper,
+.featured .project-num-proposals,
+.featured .project-description,
+.featured .project-meta-below-desc,
+.featured .project-location,
+.featured .project-cat {
+	border-color: #0095C9;
+}
+
+.featured .label {
+	background-color: #3FADD4;
+	color: #F0EFF4;
+}
+
+.featured .project-skills .label:after {
+	border-left-color: #3FADD4;
+}
+
+/* project loop */
+
+.budget-deadline .project-budget {
+	background-color: #CC8AF6;
+}
+
+.budget-deadline .project-budget .budget-type {
+	background-color: #B064E0;
+}
+
+.budget-deadline .project-expires {
+	background-color: #93C864;
+}
+
+.budget-deadline .project-expires .days-left {
+	background-color: #A6D87A;
+}
+
+/* freelancer loop */
+
+.freelancers-header .article-title h3 {
+	color: #FFF;
+	background-color: #A6D87A;
+}
+
+/* ribbon flag ends */
+
+.freelancers-header .article-title h3:before,
+.freelancers-header .article-title h3:after {
+	border-color: #A6D87A;
+}
+
+/* pagination */
+
+ul.pagination li a {
+	background-color: #E6E8EA;
+	color: #000;
+}
+
+.home ul.pagination li a {
+	background-color: #C582EF;
+}
+
+ul.pagination li.current a,
+ul.pagination li.current a:hover {
+	color: #FFF;
+}
+
+ul.pagination li.current a,
+ul.pagination li.current a:hover,
+ul.pagination li a:hover {
+	background-color: #A76ACC;
+	text-decoration: none;
+	color: #FFF;
+}
+
+/* blog loop */
+
+.post-date-box {
+	color: #FFF;
+	background-color: #00A2DB;
+}
+
+.post-date-box .box-comment-link {
+	border-top: 1px solid #0082BE;
+}
+
+/* =========== [ 4. SINGLE ] =========== */
+
+.single-project .single-project-header {
+	background-color: #3B3551;
+}
+
+.single-project .single-project-header:after {
+	border-top: 8px solid #3B3551;
+}
+
+.single-project .bid .button {
+	background-color: #FB6B5B;
+	color: #FFF;
+}
+
+.single-project .bid .button:hover {
+	background-color: #C95B4F;
+}
+
+.single-by-widget-meta a {
+	color: #C582EF;
+}
+
+.section-tabs .active p.title a,
+.section-tabs .active p.title a:hover {
+	background-color: #0082BE;
+}
+
+article.post a,
+article.page a,
+article.fourzerofour a {
+	color: #CC8AF6;
+}
+
+.comment-form .logged-in-as a {
+	color: #FFF;
+	background-color: #00A2DB;
+}
+
+.comment-form .logged-in-as a:nth-of-type(2) {
+	background-color: #C582EF;
+}
+
+.comment-form .logged-in-as a:nth-of-type(2):hover {
+	background-color: #A76ACC;
+	text-decoration: none;
+}
+
+/* proposals */
+
+.single-bid .bid-terms {
+	background-color: #0082BE;
+	color: #FFF;
+}
+
+.single-bid .bid-terms:before {
+	border-left: 8px solid #0082BE;
+}
+
+.bid-terms .bid {
+	background-color: #CC8AF6;
+}
+
+.bid-terms .bid .proposal-delivery {
+	background-color: #B064E0;
+}
+
+.bid-terms .submit-time {
+	background-color: #A6D87A;
+}
+
+.bid-terms .submit-time .proposal-posted-time {
+	background-color: #93C864;
+}
+
+/* =========== [ 5. FORMS ] =========== */
+
+form input[type='submit'] {
+	background-color: #C582EF;
+	color: #FFF;
+}
+
+form input[type='submit'].button:not(.secondary):hover:not(:disabled),
+form input[type='submit']:hover {
+	background-color: #A76ACC;
+}
+
+.log-in .register-box {
+	background-color: #E16868;
+	color: #FFF;
+}
+
+.log-in .register-box .button {
+	background-color: #00A2DB ;
+}
+
+.log-in .register-box .button:hover {
+	background-color: #0082BE;
+}
+
+.log-in .register-box .button a:hover {
+	text-decoration: none;
+}
+
+.login-form input[type='submit'] {
+	background-color: #C582EF;
+	color: #FFF;
+}
+
+.create-project form.custom .selector,
+.order-checkout form.custom .selector,
+.dashboard-workspace form.custom .selector,
+.edit-profile form.custom .selector,
+#load-saved-filter-form .selector {
+	background-color: #00A2DB;
+	border-bottom: solid 1px #FFF;
+}
+
+.create-project .section-head h1,
+.order-checkout .section-head h1,
+.agreement .section-head h1 {
+	background-color: #0082BE;
+	color: #FFF;
+}
+
+.create-project .budget-currency .custom.dropdown a,
+.create-project .location-type .custom.dropdown a {
+	background-color: #00A2DB;
+	color: #FFF;
+}
+
+.create-project .selected-currency {
+	background-color: #00A2DB;
+	color: #FFF;
+}
+
+
+.create-project .files .button:hover {
+	background-color: #A76ACC;
+	color: #FFF;
+}
+
+/* progress tracker steps */
+
+ol.progtrckr li.progtrckr-done,
+ol.progtrckr li.progtrckr-todo {
+	color: #445159;
+	border-top: 4px solid #E16868;
+	border-bottom: 4px solid #DEE5EE;
+}
+
+ol.progtrckr li.progtrckr-done:before {
+	background-color: #E16868;
+}
+
+ol.progtrckr li.progtrckr-todo:before {
+	color: #E16868;
+}
+
+/* =========== [ 6. SIDEBAR ] =========== */
+
+/* sidebar widgets */
+
+.user-info-wrap h3 {
+	background-color: #0082BE;
+	color: #FFF;
+}
+
+/* =========== [ 7. DASHBOARD ] =========== */
+
+.dashboard > h2,
+.edit-profile > h2 {
+	color: #0082BE;
+}
+
+.dashboard > h2 i {
+	color: #00A2DB;
+}
+
+.dashboard table thead > tr {
+	background-color: #0082BE;
+}
+
+.dashboard-notifications .new-notification {
+	color: #0082BE;
+}
+
+.agreement .section-primary-info {
+	background-color: #0082BE;
+	color: #FFF;
+}
+
+/* =========== [ 8. FOOTER ] =========== */
+
+#footer {
+	color: #91988B;
+}
+
+#footer a {
+	color: #91C960;
+}

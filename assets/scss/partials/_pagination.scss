@@ -1,0 +1,78 @@
+
+/* Pagination
+----------------------------------------------- */
+
+.fl-pagination {
+	margin-bottom: 52px;
+}
+
+ul.pagination li {
+	margin-left: 0.5em;
+}
+
+ul.pagination li a {
+	border-radius: 50%;
+	width: 41px;
+	height: 41px;
+	font-weight: bold;
+	line-height: 41px;
+	font-size: 16px;
+	padding: 1px 10px;
+}
+
+ul.pagination li a.next,
+ul.pagination li a.prev {
+	font-size: 6pt;
+}
+
+/* blog pagination */
+
+#posts .pagination {
+	margin: 3em auto;
+	text-align: center;
+}
+
+#posts .pagination a,
+#posts .pagination span {
+	display: inline-block;
+	margin-left: 0.5em;
+	background-color: #E6E8EA;
+	color: #000;
+	border-radius: 50%;
+	width: 41px;
+	height: 41px;
+	font-weight: bold;
+	line-height: 41px;
+	font-size: 16px;
+	padding: 1px 10px;
+}
+
+#posts .pagination .current,
+#posts .pagination .current:hover {
+	background-color: #A9DB7C;
+	color: #FFF;
+}
+
+#posts .pagination a.next,
+#posts .pagination a.prev {
+	display: none;
+}
+
+/* image pagination */
+
+.image-navigation {
+	margin-bottom: 5px;
+}
+
+.image-navigation a,
+a.back-to-post {
+	color: $suva-grey;
+	font-size: 0.95rem;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $matterhorn;
+		text-decoration: none;
+	}
+}

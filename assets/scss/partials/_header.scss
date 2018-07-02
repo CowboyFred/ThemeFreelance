@@ -1,0 +1,264 @@
+
+/* Header
+----------------------------------------------- */
+
+.hrb-gravatar img {
+	width: 35px;
+	height: 35px;
+}
+
+#header-ad .ad-space {
+	margin-bottom: 0;
+}
+
+.ad-space {
+	background: none;
+	border: none;
+	text-align: center;
+
+	@include breakpoint(medium) {
+		margin-bottom: 1.25em;
+		padding: 1.25em;
+	}
+}
+
+.ad-space p {
+	color: #FFF;
+}
+
+.header {
+	.header-branding-wrap {
+		padding: 30px 0;
+		display: table;
+
+		form {
+			margin: 0;
+		}
+	}
+	.site-title {
+		margin: 0;
+		display: inline-block;
+		text-align: left;
+		vertical-align: middle;
+
+		@include breakpoint(small only) {
+			display: none;
+		}
+
+		a:hover {
+			text-decoration: none;
+		}
+	}
+
+	.custom-logo-link {
+		display: inline-block;
+		margin-right: 10px;
+	}
+
+	.site-branding {
+		vertical-align: middle;
+		text-align: center;
+		margin-bottom: 1em;
+
+		@include breakpoint(medium) {
+			display: table-cell;
+			text-align: left;
+			padding-right: 1rem;
+		}
+	}
+
+	.site-description {
+		margin: 2px 0 0;
+		font-size: 14px;
+		color: #888;
+	}
+}
+
+.top-widgets .panel {
+	background-color: #E4E4E3;
+	text-align: center;
+}
+
+/* Categories */
+
+.click-cat-menu {
+	display: none;
+}
+
+.top-navigation-header .project-dropdown {
+	@include breakpoint(large) {
+		padding-right: 0;
+	}
+}
+
+.project-dropdown .button {
+	border: 0;
+	float: right;
+	padding-top: 17px;
+	padding-bottom: 17px;
+
+	@include breakpoint(large) {
+		margin: 0;
+	}
+
+	@include breakpoint(small only) {
+		width: 100%;
+	}
+}
+
+.project-dropdown .button.secondary:before {
+	border-color: #FFF transparent transparent transparent;
+}
+
+/* Search */
+
+input.search {
+	height: auto;
+	padding: 16px;
+}
+
+.search-field input[type='text'] {
+	display: inline-block;
+	margin: 0;
+}
+
+.search-btn {
+	position: absolute;
+	top: 0;
+	right: 15px;
+}
+
+.search-button {
+	border: 0;
+	padding: 9px 22px;
+	margin: 0;
+
+	i {
+		font-size: 1.4em;
+
+		&:before {
+			/* flip horizontally since icon is backwards by default */
+			transform: scale(-1, 1);
+		}
+	}
+}
+
+
+/* Nav */
+
+.top-navigation {
+	background-color: #FFF;
+	border-top: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+}
+
+.top-bar-section ul {
+	background-color: #FFF;
+	margin: 1px 0;
+}
+
+.top-bar:not(.lower-top-bar) .top-bar-section li:not(.has-form) a:not(.button) {
+	background: #FFF;
+}
+
+.top-bar-section ul li a {
+	transition: background-color 300ms ease-out;
+}
+
+.top-navigation .top-bar-section li:not(.has-form) a:not(.button):hover {
+	color: #A1A1A1;
+}
+
+.top-navigation li a:not(.button) {
+	padding: 0 15px;
+	border-left: 1px solid #EFEFEF;
+}
+
+.top-navigation li:last-child a:last-child:not(.button) {
+	border-right: 1px solid #EFEFEF;
+}
+
+.top-bar.expanded li a {
+	border-left: none;
+}
+
+.top-navigation .top-bar.expanded .top-bar-section ul li {
+	border-top: 1px solid #F5F5F5;
+	padding: 10px;
+}
+
+.top-navigation .top-bar.expanded .top-bar-section ul li:first-of-type,
+.top-navigation .top-bar.expanded .top-bar-section ul li.hrb-favorites {
+	border-top: 5px solid #F5F5F5;
+}
+
+.top-navigation .top-bar.expanded li:last-child a:last-child,
+.top-navigation .top-bar li.toggle-topbar:last-child a:last-child {
+	border-right: none;
+}
+
+.top-navigation .top-bar.expanded .toggle-topbar a span {
+	box-shadow: 0 10px 0 1px #888, 0 16px 0 1px #888, 0 22px 0 1px #888;
+}
+
+.top-bar-section ul li > a {
+	font-size: 16px;
+	font-weight: normal;
+	color: #A1A1A1;
+}
+
+.top-bar-section .inbox {
+	background-color: #F2505F;
+	color: #FFF;
+	padding: 0 6px;
+}
+
+/* social menu */
+.top-bar-section .left i {
+	background: #FFF;
+	padding: 5px 5px 2px;
+}
+
+.top-bar .toggle-topbar.menu-icon a {
+	color: #A1A1A1;
+	border: none;
+}
+
+.top-bar.expanded .title-area {
+	background: #FFF;
+	border: none;
+}
+
+/* main nav menu */
+
+.main-navigation .lower-top-bar ul li > a {
+	color: #FFF;
+}
+
+.lower-top-bar li a:not(.button) {
+	padding: 0 25px;
+	line-height: 60px;
+	text-transform: uppercase;
+}
+
+.lower-top-bar.expanded li a {
+	border-right: none;
+}
+
+.lower-top-bar li:last-child a:last-child {
+	border-right: none;
+}
+
+.lower-top-bar .toggle-topbar.menu-icon {
+	left: 0;
+	padding-left: 0;
+}
+
+/* Example Header Splash */
+
+.splash-example {
+	background-image: url('#{$hrb-image-path}/bg_home_features_top.png'), url('#{$hrb-image-path}/bg_home_features_bottom.png');
+	background-position: top left, bottom right;
+	background-repeat: no-repeat, no-repeat;
+	padding: 30px 0 30px;
+}
