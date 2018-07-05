@@ -652,7 +652,8 @@ class APP_Registration extends APP_Login_Base {
 			'user_login',
 			'user_email',
 			'pass1',
-			'pass2'
+			'pass2',
+            'role'
 		);
 
 		foreach ( $fields as $field ) {
@@ -708,7 +709,11 @@ class APP_Registration extends APP_Login_Base {
 		}
 
 		// create the account and pass back the new user id
-		$user_id = wp_create_user( $posted['user_login'], $user_pass, $posted['user_email'] );
+        $user_login = wp_slash( $posted['user_login'] );
+        $user_email = wp_slash( $posted['user_email']    );
+        $role = $posted['role'];
+        $userdata = compact('user_login', 'user_email', 'user_pass', 'role');
+        $user_id = wp_insert_user($userdata);
 
 		// something went wrong captain
 		if ( ! $user_id ) {
