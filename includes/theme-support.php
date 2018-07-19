@@ -30,6 +30,7 @@ add_theme_support( 'app-login', array(
 	'register' => 'form-registration.php',
 	'recover'  => 'form-password-recovery.php',
 	'reset'    => 'form-password-reset.php',
+    'post-registration' => 'form-post-registration.php'
 ) );
 
 add_theme_support( 'app-payments', array(

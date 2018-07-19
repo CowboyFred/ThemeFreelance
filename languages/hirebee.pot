@@ -963,6 +963,10 @@ msgstr ""
 msgid "Register"
 msgstr ""
 
+#: form-post-registration.php:44
+msgid "Finish Authorisation"
+msgstr ""
+
 #: form-registration.php:24
 msgid "User registration has been disabled."
 msgstr ""
